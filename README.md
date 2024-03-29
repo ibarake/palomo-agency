@@ -1,0 +1,1 @@
+# Palomo agency Wordpress website with sage
