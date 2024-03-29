@@ -1,3 +1,3 @@
 # Palomo Agency React + TypeScript + Vite
 
-### Task: define CMS
+## Task: define CMS
