@@ -1,3 +1,1 @@
-# Palomo Agency React + TypeScript + Vite
-
-## Task: define CMS
+# Palomo Agency React + TypeScript + Vite + Strapi CMS server

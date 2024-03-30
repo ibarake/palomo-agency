@@ -1,24 +1,114 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+############################
+# OS X
+############################
 
-node_modules
-dist
-dist-ssr
-*.local
+backend-cms/.DS_Store
+backend-cms/.AppleDouble
+backend-cms/.LSOverride
+backend-cms/Icon
+backend-cms/.Spotlight-V100
+backend-cms/.Trashes
+backend-cms/._*
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+############################
+# Linux
+############################
+
+backend-cms/*~
+
+
+############################
+# Windowsbackend-cms/
+############################
+
+backend-cms/Thumbs.db
+backend-cms/ehthumbs.db
+backend-cms/Desktop.ini
+backend-cms/$RECYCLE.BIN/
+backend-cms/*.cab
+backend-cms/*.msi
+backend-cms/*.msm
+backend-cms/*.msp
+
+
+############################
+# Packages
+############################
+
+backend-cms/*.7z
+backend-cms/*.csv
+backend-cms/*.dat
+backend-cms/*.dmg
+backend-cms/*.gz
+backend-cms/*.iso
+backend-cms/*.jar
+backend-cms/*.rar
+backend-cms/*.tar
+backend-cms/*.zip
+backend-cms/*.com
+backend-cms/*.class
+backend-cms/*.dll
+backend-cms/*.exe
+backend-cms/*.o
+backend-cms/*.seed
+backend-cms/*.so
+backend-cms/*.swo
+backend-cms/*.swp
+backend-cms/*.swn
+backend-cms/*.swm
+backend-cms/*.out
+backend-cms/*.pid
+
+
+############################
+# Logs and databases
+############################
+
+backend-cms/.tmp
+backend-cms/*.log
+backend-cms/*.sql
+backend-cms/*.sqlite
+backend-cms/*.sqlite3
+
+
+############################
+# Misc.
+############################
+
+backend-cms/*#
+backend-cms/ssl
+backend-cms/.idea
+backend-cms/nbproject
+backend-cms/public/uploads/*
+backend-cms/!public/uploads/.gitkeep
+
+############################
+# Node.js
+############################
+
+backend-cms/lib-cov
+backend-cms/lcov.info
+backend-cms/pids
+backend-cms/logs
+backend-cms/results
+backend-cms/node_modules
+backend-cms/.node_history
+
+############################
+# Tests
+############################
+
+backend-cms/coverage
+
+############################
+# Strapi
+############################
+
+backend-cms/.env
+backend-cms/license.txt
+backend-cms/exports
+backend-cms/.strapi
+backend-cms/dist
+backend-cms/build
+backend-cms/.strapi-updater.json
