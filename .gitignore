@@ -112,3 +112,36 @@ backend-cms/.strapi
 backend-cms/dist
 backend-cms/build
 backend-cms/.strapi-updater.json
+
+
+
+############################
+# Frontend ignores
+############################
+
+frontend-server/.env
+
+# Logs
+frontend-server/logs
+frontend-server/*.log
+frontend-server/npm-debug.log*
+frontend-server/yarn-debug.log*
+frontend-server/yarn-error.log*
+frontend-server/pnpm-debug.log*
+frontend-server/lerna-debug.log*
+
+frontend-server/node_modules
+frontend-server/dist
+frontend-server/dist-ssr
+frontend-server/*.local
+
+# Editor directories and files
+frontend-server/.vscode/*
+frontend-server/!.vscode/extensions.json
+frontend-server/.idea
+frontend-server/.DS_Store
+frontend-server/*.suo
+frontend-server/*.ntvs*
+frontend-server/*.njsproj
+frontend-server/*.sln
+frontend-server/*.sw?
