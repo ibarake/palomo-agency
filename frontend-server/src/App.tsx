@@ -1,16 +1,48 @@
-import LogoMain from './assets/fullLogoWhite.svg';
+import useFetch from './hooks/useFetch';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import { Home, Process, Contact } from './routes';
+import { Header } from './components';
 
-export default function App() {
-  return (
-    <>
-      <div className="App flex items-center justify-center h-screen w-screen bg-[#DCCCB3]">
-        <header className='flex flex-col items-center justify-center'>
-          <img src={LogoMain} className="App-logo" alt="logo" width={256} />
-          <h1 className="text-3xl font-bold text-gray-500">
-            Palomo Agency
-          </h1>
-        </header>
+const client = new ApolloClient({
+  uri: `${import.meta.env.VITE_CMS_URL}/graphql`,
+  cache: new InMemoryCache()
+})
+
+function App() {
+  const { data, loading, error } = useFetch(`${import.meta.env.VITE_CMS_URL}/api/headers/1`);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen w-screen bg-[#DCCCB3]">
+        <p className='text-white'>Loading...</p>
       </div>
-    </>
+    )
+  } 
+  if (error) {
+    console.log(error)
+    return <p className='text-red'>Error...</p>
+  }
+
+  console.log(`Active header: ${data.data.attributes.active}`);
+  return (
+    <div className='App flex flex-col items-center justify-center h-screen w-screen bg-[#DCCCB3]'>
+      <ApolloProvider client={client}>
+          <Router>
+          <Header />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/process' element={<Process />} />
+              <Route path='/contact' element={<Contact />} />
+            </Routes>
+          </Router>
+      </ApolloProvider>
+    </div>
   )
 }
+
+export default App;

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_global_link_and_texts",
+  "info": {
+    "displayName": "Link & Text",
+    "icon": "exit"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
