@@ -1,4 +1,4 @@
-# 🚀 Vite React Strapi Boilerplate
+# 🚀 Vite React Strapi Typescript Boilerplate
 
 ## 🌟 About
 This boilerplate is your go-to starter kit for developing high-quality React applications for clients. It integrates Vite, React with TypeScript, Strapi with PostgreSQL, and `react-router-dom` for seamless page routing. Perfect for agencies and freelancers dedicated to excellence.
