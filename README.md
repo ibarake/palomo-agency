@@ -15,24 +15,24 @@ This boilerplate is your go-to starter kit for developing high-quality React app
 
 ### Prerequisites
 - Node.js (LTS)
-- Yarn or npm
+- npm
 - Git
-- PostgreSQL
+- A PostgreSQL DB
 
 ### 📦 Installation
 1. **Clone and prepare:**
    ```bash
    git clone https://github.com/ibarake/vite-react-strapi-boilerplate.git
-   cd vite-react-strapi-boilerplate && yarn # or npm install
+   cd vite-react-strapi-boilerplate && npm install
    ```
 2. **Fire up the development servers:**
    - For React frontend:
      ```bash
-     cd frontend-server && yarn dev # or npm run dev
+     cd frontend-server && npm run dev
      ```
    - For Strapi backend with PostgreSQL:
      ```bash
-     cd backend-cms && yarn develop # or npm run develop
+     cd backend-cms && npm run develop # or yarn run develop
      ```
 
 ### 🛠 Configuration
